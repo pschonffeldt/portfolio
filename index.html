@@ -3,9 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Pablo's portfolio</title>
 </head>
 <body>
-    
+    <nav>
+        <ul class = "nav__links">
+            <li><a class = "nav__link-item" href="/">Welcome</a></li>
+            <li><a class = "nav__link-item" href="/">About</a></li>
+            <li><a class = "nav__link-item" href="/">Career</a></li>
+            <li><a class = "nav__link-item" href="/">Stack</a></li>
+            <li><a class = "nav__link-item" href="/">Certifications</a></li>
+            <li><a class = "nav__link-item" href="/">Projects</a></li>
+            <li><a class = "nav__link-item" href="/">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="layout__container">
+            
+            <section class = "section__hero">
+                <div class="section__hero-texts">
+                    <h2 class="section__hero-texts-greeting">Hi, I’m</h2>
+                    <h1 class="section__hero-texts-name">Pablo Schonffeldt</h1>
+                    <p class="section__hero-texts-description">Former marketing strategist turned frontend developer — building clean, responsive, and meaningful digital experiences.</p>
+                    <div class="section__hero-texts-cta"><a class = "section__hero-texts-cta-text" href="/">More about me</a></div>
+                </div>
+                <div class="section__hero-image">
+                    <img class="section__hero-image-file" src="./images/profile-pic.webp" alt="pablo-profile-picture">
+                </div>
+            </section>
+
+            <section class = "section__about">
+                <div class="section__about-content">
+                    <h2 class="section__about-title">About me</h2>
+                    <p class="section__about-description">I’m a web developer with a multidisciplinary background and a growing focus on custom web solutions.</p>
+                    <p class="section__about-description">After years working in product marketing, automation, and digital strategy across Europe, Asia, and Latin America, I’ve transitioned fully into software development — driven by a passion for building things from the ground up.</p>
+                    <p class="section__about-description">Originally trained in film production, my journey took me through marketing for global companies, founding my own marketing and software development company in Chile, co-founding a startup, and leading automation strategies that drove measurable growth.</p>
+                    <p class="section__about-description">Today, I bring that same creative and analytical mindset to web development — combining thoughtful design, clean code, and user-first thinking.</p>
+                        
+                </div>
+                <div class="section__about-image">
+                    <img class="section__about-image-file" src="./images/working-pic.webp" alt="pablo-working-picture">
+                    <p class="section__about-image-text">Yes, I use my birks with socks</p>
+                </div>
+            </section>
+
+            <section class = "section__career">
+                <div class="section__career-content">
+                    <h2 class="section__career-title">From strategy to software</h2>
+                    <p class="section__career-description">Before fully dedicating myself to development, I spent years at the intersection of marketing, data, and product. As a strategist and automation specialist, I collaborated with teams across Latin America, Europe, and Southeast Asia — always seeking ways to improve performance through systems and design.</p>
+                    <p class="section__career-description">What started as a passion for problem-solving and curiosity for how things worked under the hood evolved into a full transition to frontend development. Today, I build websites and interfaces with the same mindset that shaped my past: data-driven decisions, clarity in communication, and a commitment to impact.</p>
+                    <img class = "section__career-timeline" src="./images/timeline.png" alt="pablo-work-timeline">
+                </div>
+            </section>
+
+            <section class = "section__stack">
+                <div class="section__stack-texts">
+                    <h2 class="section__stack-texts-title">Stack</h2>
+                    <p class="section__stack-texts-description">I’ve built my frontend stack around clarity, performance, and scalability — applying principles I once used in product design and campaign systems to user interfaces and interactions.</p>
+                </div>
+                <div class="section__stack-container">
+                    <div class="section__stack-container-row-a">
+                        <div class="section__stack-container-icon">
+                            <img class = "section__stack-container-icon-tech" src="./images/html.svg" alt="html-logo">
+                        </div>
+                        <div class="section__stack-container-icon">
+                            <img class = "section__stack-container-icon-tech" src="./images/javascript.svg" alt="html-logo">
+                        </div>
+                        <div class="section__stack-container-icon">
+                            <img class = "section__stack-container-icon-tech" src="./images/css.svg" alt="html-logo">
+                        </div>
+                    </div>
+                    <div class="section__stack-container-row-b">
+                        <div class="section__stack-container-icon">
+                            <img class = "section__stack-container-icon-tech" src="./images/git.svg" alt="html-logo">
+                        </div>
+                        <div class="section__stack-container-icon">
+                            <img class = "section__stack-container-icon-tech" src="./images/github.svg" alt="html-logo">
+                        </div>
+                        <div class="section__stack-container-icon">
+                            <img class = "section__stack-container-icon-tech" src="./images/gitkraken.svg" alt="html-logo">
+                        </div>
+                        <div class="section__stack-container-icon">
+                            <img class = "section__stack-container-icon-tech" src="./images/vs-code.svg" alt="html-logo">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class = "section__certifications">
+                <div class="section__career-content">
+                    <h2 class="section__career-title">Certifications</h2>
+                </div>
+                <div class="section__certifications-container">
+                    <img src="./images/cert-a.webp" alt="Responsive Web Design Certification">
+                    <img src="./images/cert-b.webp" alt="JavaScript Algorithms and Data Structures Certification">
+                </div>
+            </section>
+
+            <section class = "section__projects">
+                <div class="section__projects-content">
+                    <h2 class="section__projects-title">Projects</h2>
+                </div>
+                <div class="section__projects-container">
+                    <div class="section__projects-container-a">
+
+                    </div>
+                    <div class="section__projects-container-b">
+
+                    </div>
+                </div>
+            </section>
+            <section class = "section__contact"></section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <h2 class ="footer__title">Let’s Build Something Together</h2>
+            <h3 class = "footer__subtitle">I’m always open to new opportunities</h3>
+            <p class = "footer__content">Whether it’s collaborating on a project, solving a problem, or exploring something meaningful in tech. If you’re looking for a developer who brings both technical skill and strategic insight to the table, let’s talk.</p>
+            <h3 class = "footer__cta">Connect with me</h3>
+            <div class="section__stack-container-row-a">
+                <div class="section__stack-container-icon">
+                    <a href="https://www.linkedin.com/in/pablo-schonffeldt-guilisasti/"><img class = "section__stack-container-icon-tech" src="./images/linkedin.svg" alt="linkedin-logo">
+                    </a>
+                </div>
+                <div class="section__stack-container-icon">
+                    <a href="https://github.com/pschonffeldt">
+                    <img class = "section__stack-container-icon-tech" src="./images/github.svg" alt="github-logo">
+                    </a>
+                </div>
+                <div class="section__stack-container-icon">
+                    <a href="mailto:cineschonffeldt@gmail.com?subject=Hello%20Pablo&body=I%20loved%20your%20portfolio!">
+                    <img class = "section__stack-container-icon-tech" src="./images/envelope.svg" alt="send-email">
+                    </a>
+                </div>
+            </div>
+            <p class = "footer_copyright">© 2025 Pablo Schonffeldt. Built with clean code and purpose.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
