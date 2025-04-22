@@ -10,9 +10,6 @@
     --light-button: #171717;
     --light-button-text: #FFFFFF;
     --light-footer-font: #FFFFFF;
-    /* --white-background: #ffffff; */
-    /* --hover-background: #ededed; */
-    /* --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); */
     --font-main: Inter, sans-serif;
 }
 
@@ -196,12 +193,8 @@ main {
     color: var(--light-font);
 }
 
-section {
-  /* outline: 2px dashed red; */
-}
 
-
-.section__hero-texts-cta {
+.section__hero-button {
     font-family: inherit;
     width: 170px;
     height: 50px;
@@ -213,12 +206,38 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--light-button-text);
+    text-decoration: none;
 }
 
 .section__hero-texts-cta-text {
     color: var(--light-button-text);
     text-decoration: none;
 }
+
+
+
+.section__hero-button {
+    font-family: inherit;
+    width: 170px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: var(--light-button);
+    color: var(--light-button-text);
+    text-decoration: none; /* removes underline */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    will-change: transform;
+
+  }
+  
+  .section__hero-button:hover {
+    background-color: #333; /* optional darker tone */
+    transform: scale(1.05); /* grow the button slightly */
+  }
 
 /* === About section === */
 .section__about {
@@ -301,7 +320,7 @@ section {
 
 .section__career-description {
     font-family: inherit;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: lighter;
     font-stretch: normal;
     font-style: normal;
@@ -389,9 +408,10 @@ section {
 }
 
 .section__stack-card-icon-tech {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     object-fit: contain;
+    border-radius: 15px;
 }
 
 
@@ -404,7 +424,8 @@ section {
     width: 100%;
     gap: 100px;
     padding-top: 0; /* or adjust to taste */
-
+    margin-top: -200px;
+    margin-bottom: 100px;
 }
 
 
@@ -435,6 +456,16 @@ section {
     flex-wrap: wrap;
     margin-top: 40px; /* Adds space between title and images */
 }
+
+.certification-diploma {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    will-change: transform; 
+}
+
+.certification-diploma:hover {
+    background-color: #333; /* optional darker tone */
+    transform: scale(1.05); /* grow the button slightly */
+  }
 
 
 /* === Projects section === */
