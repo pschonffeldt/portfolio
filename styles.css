@@ -59,6 +59,17 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    font-size: 24px;
+    font-family: inherit;
+    color: #black;
+    /* text-align: center; */
+}
+
+p {
+    font-family: inherit;
+}
+
 .section__container {
     width: 100%;
     max-width: 1080px;
@@ -69,8 +80,8 @@ h3 {
     justify-content: center;
     align-items: center;
     gap: 100px;
-    /* padding-top: 200px; */
-    /* padding-bottom: 100px; */
+    padding-top: 180px;
+    padding-bottom: 180px;
       
 }
   
@@ -94,6 +105,7 @@ nav {
     height: 30px;
     padding-top: 15px;
     padding-bottom: 30px;
+    border-bottom: 1px solid black;
 }
 
 .nav__links {
@@ -135,6 +147,7 @@ main {
     align-items: center;
     width: 100%;
     gap: 100px;
+    padding-top: 100px;
 }
 
 .section__hero-texts {
@@ -184,7 +197,7 @@ main {
 }
 
 section {
-  outline: 2px dashed red;
+  /* outline: 2px dashed red; */
 }
 
 
@@ -251,8 +264,8 @@ section {
 .section__about-image-file {
     /* margin-top: 150px; */
     border-radius: 10px;
-    width: 370px;
-    height: 527px;
+    width: 300px;
+    height: auto;
     
 }
 
@@ -301,6 +314,7 @@ section {
 
 .section__career-timeline {
     padding-top: 100px;
+    width: 100%;
 }
 
 /* === Stack section === */
@@ -311,6 +325,8 @@ section {
     align-items: center;
     width: 100%;
     gap: 100px;
+    padding-bottom: 0;
+
 }
 
 .section__stack-texts {
@@ -381,66 +397,111 @@ section {
 
 /* === Certifications section === */
 .section__certifications {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
+    padding-top: 0; /* or adjust to taste */
 
 }
 
-.section__career-content {
-
-}
 
 .certifications__container {
-    /* display: flex; */
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
+.certifications__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align title to the left */
+    /* align-items: center; */
+}
+
 
 
 .section__certifications-card {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* This centers the group of images */
     align-items: center;
-    gap: 200px;
+    width: 100%;
+    gap: 60px; /* Adjust spacing between cert images */
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    margin-top: 40px; /* Adds space between title and images */
 }
 
 
 /* === Projects section === */
-.section__projects {
-
-}
-
 .section__projects-title {
+    font-size: 64px;
+    font-weight: bold;
+    color: var(--light-font);
+    margin-bottom: 40px;
+    text-align: left;
+    width: 100%; /* stretch title so it's not centered by default */
+  }
 
-}
-
-.section__projects-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 165px;
-
-}
-
-.section__projects-container-a,
-.section__projects-container-b {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    font-family: inherit;
-    width: 396px;
-    height: 440px;
-    border-radius: 15px;
-    background-color: var(--light-card);
+  .projects__wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start; /* ✅ This aligns the title to the left like Certifications */
+  }
+  
+  
+  .section__projects-container {
+    display: flex;
+    justify-content: center; /* center the cards horizontally */
+    align-items: flex-start;
+    width: 100%;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .section__projects-container-a,
+  .section__projects-container-b {
+    width: 396px;
+    background-color: var(--light-card);
+    border-radius: 15px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-}
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+  }
+  
+  .section__projects-preview-a,
+  .section__projects-preview-b {
+    width: 100%;
+    height: 192px;
+    border-radius: 11px;
+    background-color: #000;
+    margin-bottom: 24px;
+  }
+  
+  .section__projects-name {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--light-font);
+    margin: 16px 0 12px 0; /* vertical spacing only */
+    padding-left: 0; /* ensure no padding shift */
+    text-align: left;
+  }
+  
+  .section__projects-description {
+    font-family: inherit;
+    font-size: 18px;
+    color: var(--light-font);
+    text-align: left;
+    line-height: 1.5;
+  }
 
 
 /* === Contact section === */
@@ -450,6 +511,16 @@ section {
 
 
 /* === Footer === */
+.section__contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 100px; 
+}
+
+
 .footer {
     background-color: var(--light-footer-background);
     border-radius: 100px 100px 0 0;
@@ -458,16 +529,20 @@ section {
     justify-content: center;
     align-items: center;
     width: 70%;
-    padding-top: 200px;
+    padding-top: 150px;
     margin: 0 auto; /* <--- This centers the entire footer block */
 
 }
 
 .footer__title {
     color: var(--light-footer-font);
+    /* padding-top: 50px; */
+
 }
 
 .footer__subtitle {
+    padding-top: 20px;
+
 
 }
 
@@ -479,34 +554,54 @@ section {
     padding-right: 2rem;
     max-width: 800px;
     margin: 0 auto;
+    padding-top: 20px;
+
   }
   
 
 .footer__cta {
+    padding-top: 20px;
 
 }
 
-.footer__container {
+.footer__stack-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 12px;
-    font-family: inherit;
-    width: 371px;
-    height: 157px;
-    border-radius: 15px;
-    background-color: var(--light-card);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    padding-top: 20px;
+
 }
+
+.section__stack-container-icon {
+    width: 60px;
+    height: 60px;
+    padding: 5px; 
+    justify-content: center;
+    align-items: center;
+    background-color: #FDFDFD;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.section__stack-container-icon-tech {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 .footer_copyright {
     font-family: inherit;
 
     color: #FFFFFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
 
 }
