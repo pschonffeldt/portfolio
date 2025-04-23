@@ -73,7 +73,7 @@ p, h1, h2, h3, h4, a {
     color: var(--light-font);
 }
 
-h2 {
+h1, h2 {
     font-family: inherit;
     font-size: 64px;
     font-weight: bold;
@@ -86,7 +86,27 @@ h3 {
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:focus,
+button:focus {
+    outline: 2px solid var(--light-button);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+.contact__link:focus {
+    outline: 2px solid var(--light-footer-font);
+    outline-offset: 8px;
+    border-radius: 8px;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #000;
+    outline-offset: 4px;
 }
 
 .u-container {
@@ -110,7 +130,26 @@ h4 {
     animation: shake 0.8s ease-in-out both;
 }
 
-.nav {
+.text-light {
+    font-weight: lighter;
+    text-align: left;
+}
+
+.text-lg {
+    font-size: 24px;
+}
+
+.text-md {
+    font-size: 20px;
+}
+
+.text-sm {
+    font-size: 18px;
+}
+
+
+
+nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -178,23 +217,14 @@ main {
 }
 
 .hero__text-greeting {
-    font-size: 30px;
-    font-weight: lighter;
-    text-align: left;
     animation: fadeUp 0.8s ease-out 0.2s both;
 }
 
 .hero__text-name {
-    font-size: 64px;
-    font-weight: bold;
-    text-align: left;
     animation: fadeUp 0.8s ease-out 0.4s both;
 }
 
 .hero__text-description {
-    font-size: 24px;
-    font-weight: lighter;
-    text-align: left;
     animation: fadeUp 0.8s ease-out 0.6s both;
 }
 
@@ -242,9 +272,6 @@ main {
 }
 
 .about__description {
-    font-size: 20px;
-    font-weight: lighter;
-    text-align: left;
     margin-top: 12px;
 }
 
@@ -264,7 +291,7 @@ main {
     position: relative;
     text-align: center;
     font-size: 12px;
-    font-weight: light;
+    font-weight: 300;
     padding-top: 10px;
 }
 
@@ -278,9 +305,6 @@ main {
 }
 
 .career__content-description {
-    font-size: 20px;
-    font-weight: lighter;
-    text-align: left;
     margin-top: 12px;
 }
 
@@ -304,10 +328,7 @@ main {
 }
 
 .stack__text-description {
-    font-size: 24px;
     max-width: 555px;
-    font-weight: lighter;
-    text-align: left;
     margin-top: 12px;
 }
 
@@ -363,13 +384,6 @@ main {
     margin-bottom: 100px;
 }
 
-.certifications__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 .certifications__wrapper {
     display: flex;
     flex-direction: column;
@@ -415,12 +429,6 @@ main {
     width: 100%;
 }
 
-.projects__title {
-    font-size: 64px;
-    font-weight: bold;
-    text-align: left;
-}
-
 .projects__cards {
     display: flex;
     justify-content: center;
@@ -462,13 +470,10 @@ main {
 }
 
 .projects__name {
-    font-size: 20px;
-    font-weight: bold;
     margin: 0 0 12px;
 }
 
 .projects__description {
-    font-size: 18px;
     line-height: 1.5;
     margin-bottom: 16px;
 }
@@ -563,7 +568,17 @@ main {
     height: 50px;
 }
 
-.contact__card-footer_copyright {
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    background-color: var(--light-footer-background);
+}
+
+.footer__copyright {
     padding-top: 20px;
     padding-bottom: 20px;
     color: var(--light-footer-font);

@@ -3,14 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <title>Pablo's portfolio</title>
-</head>
-<body>
+    <meta name="description" content="Portfolio of Pablo Schonffeldt, frontend developer with a background in marketing, strategy, and automation.">
+    <meta name="author" content="Pablo Schonffeldt">
+    <meta property="og:title" content="Pablo Schonffeldt | Portfolio">
+    <meta property="og:image" content="./images/profile-pic.webp">
+    <meta name="theme-color" content="#f8f8f8">
 
+    
+    <link rel="icon" type="image/png" href="./images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
+    <link rel="manifest" href="./images/site.webmanifest" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+    <title>Pablo's portfolio</title>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pablo Schonffeldt",
+          "url": "https://pschonffeldt.dev",
+          "image": "https://pschonffeldt.dev/images/profile-pic.webp",
+          "sameAs": [
+            "https://github.com/pschonffeldt",
+            "https://www.linkedin.com/in/pablo-schonffeldt-guilisasti/"
+          ],
+          "jobTitle": "Frontend Developer"
+        }
+        </script>               
+</head>
+
+<body>
     <!-- NAVIGATION BAR -->
-    <nav class ="nav">
+    <nav>
         <ul class = "nav__list">
             <li><a class = "nav__link" href="#hero">Welcome</a></li>
             <li><a class = "nav__link" href="#about">About</a></li>
@@ -29,9 +56,9 @@
         <section class = "hero" id = "hero">
             <div class="u-container">
                 <div class="hero__text">
-                    <h2 class="hero__text-greeting">Hi, I’m</h2>
+                    <h3 class="hero__text-greeting text-light">Hi, I’m</h3>
                     <h1 class="hero__text-name">Pablo Schonffeldt</h1>
-                    <p class="hero__text-description">Former marketing strategist turned frontend developer — building clean, responsive, and meaningful digital experiences.</p>
+                    <p class="hero__text-description text-lg text-light">Former marketing strategist turned frontend developer — building clean, responsive, and meaningful digital experiences.</p>
                     <a href="#about" class="hero__text-button">More about me</a>
                 </div>
                 <div class="hero__image">
@@ -45,10 +72,10 @@
             <div class="u-container">
                 <div class="about__content">
                     <h2 class="about__title">About me</h2>
-                    <p class="about__description">I’m a web developer with a multidisciplinary background and a growing focus on custom web solutions.</p>
-                    <p class="about__description">After years working in product marketing, automation, and digital strategy across Europe, Asia, and Latin America, I’ve transitioned fully into software development — driven by a passion for building things from the ground up.</p>
-                    <p class="about__description">Originally trained in film production, my journey took me through marketing for global companies, founding my own marketing and software development company in Chile, co-founding a startup, and leading automation strategies that drove measurable growth.</p>
-                    <p class="about__description">Today, I bring that same creative and analytical mindset to web development — combining thoughtful design, clean code, and user-first thinking.</p>     
+                    <p class="about__description text-md text-light">I’m a web developer with a multidisciplinary background and a growing focus on custom web solutions.</p>
+                    <p class="about__description text-md text-light">After years working in product marketing, automation, and digital strategy across Europe, Asia, and Latin America, I’ve transitioned fully into software development — driven by a passion for building things from the ground up.</p>
+                    <p class="about__description text-md text-light">Originally trained in film production, my journey took me through marketing for global companies, founding my own marketing and software development company in Chile, co-founding a startup, and leading automation strategies that drove measurable growth.</p>
+                    <p class="about__description text-md text-light">Today, I bring that same creative and analytical mindset to web development — combining thoughtful design, clean code, and user-first thinking.</p>     
                 </div>
                 <div class="about__image">
                     <img class="about__image-file" src="./images/working-pic.webp" alt="pablo-working-picture">
@@ -62,8 +89,8 @@
             <div class="u-container">
                 <div class="career__content">
                     <h2 class="career__content-title">From strategy to software</h2>
-                    <p class="career__content-description">Before fully dedicating myself to development, I spent years at the intersection of marketing, data, and product.<br>As a strategist and automation specialist, I collaborated with teams across Latin America, Europe, and Southeast Asia — always seeking ways to improve performance through systems and design.</p>
-                    <p class="career__content-description">What started as a passion for problem-solving and curiosity for how things worked under the hood evolved into a full transition to frontend development. Today, I build websites and interfaces with the same mindset that shaped my past: data-driven decisions, clarity in communication, and a commitment to impact.</p>
+                    <p class="career__content-description text-md text-light">Before fully dedicating myself to development, I spent years at the intersection of marketing, data, and product.<br>As a strategist and automation specialist, I collaborated with teams across Latin America, Europe, and Southeast Asia — always seeking ways to improve performance through systems and design.</p>
+                    <p class="career__content-description text-md text-light">What started as a passion for problem-solving and curiosity for how things worked under the hood evolved into a full transition to frontend development. Today, I build websites and interfaces with the same mindset that shaped my past: data-driven decisions, clarity in communication, and a commitment to impact.</p>
                     <img class = "career__content-timeline" src="./images/timeline.png" alt="pablo-work-timeline">
                 </div>
             </div>
@@ -74,7 +101,7 @@
             <div class="u-container">
                 <div class="stack__text">
                     <h2 class="stack__text-title">Stack</h2>
-                    <p class="stack__text-description">I’ve built my frontend stack around clarity, performance, and scalability — applying principles I once used in product design and campaign systems to user interfaces and interactions.</p>
+                    <p class="stack__text-description text-lg text-light">I’ve built my frontend stack around clarity, performance, and scalability — applying principles I once used in product design and campaign systems to user interfaces and interactions.</p>
                 </div>
                 <div class="stack__card">
                     <div class="stack__card-row-a">
@@ -113,8 +140,8 @@
                 <div class="certifications__wrapper">
                     <h2 class="certifications__wrapper-title">Certifications</h2>
                     <div class="certifications__wrapper-card">
-                        <a href="https://www.freecodecamp.org/certification/pschonffeldt/responsive-web-design"><img class = "certifications__wrapper-diploma" src="./images/cert-a.webp" alt="Responsive Web Design Certification"></a>
-                        <a href="https://www.freecodecamp.org/certification/pschonffeldt/javascript-algorithms-and-data-structures-v8"><img class = "certifications__wrapper-diploma" src="./images/cert-b.webp" alt="JavaScript Algorithms and Data Structures Certification"></a>
+                        <a href="https://www.freecodecamp.org/certification/pschonffeldt/responsive-web-design" target="_blank" rel="noopener noreferrer"><img class = "certifications__wrapper-diploma" src="./images/cert-a.webp" alt="Responsive Web Design Certification"></a>
+                        <a href="https://www.freecodecamp.org/certification/pschonffeldt/javascript-algorithms-and-data-structures-v8" target="_blank" rel="noopener noreferrer"><img class = "certifications__wrapper-diploma" src="./images/cert-b.webp" alt="JavaScript Algorithms and Data Structures Certification"></a>
                     </div>
                 </div>
             </div>            
@@ -127,27 +154,27 @@
                 <h2 class="projects__title">Projects</h2>
                     <div class="projects__cards">
                         <!-- Card 1 -->
-                        <div class="projects__card">
-                        <div class="projects__media">
-                            <img src="./images/portfolio.png" alt="Professional portfolio screenshot" class="projects__image"/>
-                        </div>
-                        <h4 class="projects__name">Professional portfolio</h4>
-                        <p class="projects__description">I’ve built my professional portfolio in pursuit of becoming a better developer and applying for jobs.</p>
-                        <a href="https://mitkof.cl/" class="projects__link">
-                            <img src="./images/link.svg" alt="Visit project" class="projects__icon u-shake"/>
-                        </a>
-                        </div>
+                        <article class="projects__card">
+                            <div class="projects__media">
+                                <img src="./images/portfolio.png" alt="Professional portfolio screenshot" class="projects__image"/>
+                            </div>
+                            <h3 class="projects__name">Professional portfolio</h3>
+                            <p class="projects__description text-sm">I’ve built my professional portfolio in pursuit of becoming a better developer and applying for jobs.</p>
+                            <a href="https://mitkof.cl/" target="_blank" rel="noopener noreferrer" class="projects__link">
+                                <img src="./images/link.svg" alt="Visit project" class="projects__icon u-shake"/>
+                            </a>
+                        </article>
                         <!-- Card 2 -->
-                        <div class="projects__card">
-                        <div class="projects__media">
-                            <img src="./images/pokedex.png" alt="Pokedex app screenshot" class="projects__image"/>
-                        </div>
-                        <h4 class="projects__name">Pokedex app</h4>
-                        <p class="projects__description">I developed a Pokedex application that interacts with an API to display information about different Pokémon.</p>
-                        <a href="https://mitkof.cl/" class="projects__link">
-                            <img src="./images/link.svg" alt="Visit project" class="projects__icon u-shake"/>
-                        </a>
-                        </div>
+                        <article class="projects__card">
+                            <div class="projects__media">
+                                <img src="./images/pokedex.png" alt="Pokedex app screenshot" class="projects__image"/>
+                            </div>
+                            <h3 class="projects__name">Pokedex app</h3>
+                            <p class="projects__description text-sm">I developed a Pokedex application that interacts with an API to display information about different Pokémon.</p>
+                            <a href="https://mitkof.cl/" target="_blank" rel="noopener noreferrer" class="projects__link">
+                                <img src="./images/link.svg" alt="Visit project" class="projects__icon u-shake"/>
+                            </a>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -162,25 +189,30 @@
                 <h3 class = "contact__card-cta">Connect with me</h3>
                 <div class="contact__card-stack-container">
                     <div class="contact__card-stack-container-icon">
-                        <a href="https://www.linkedin.com/in/pablo-schonffeldt-guilisasti/">
+                        <a class="contact__link" href="https://www.linkedin.com/in/pablo-schonffeldt-guilisasti/" target="_blank" rel="noopener noreferrer">
                             <img class = "contact__card-icon-tech" src="./images/linkedin.svg" alt="linkedin-logo">
                         </a>
                     </div>
                     <div class="contact__card-stack-container-icon">
-                        <a href="https://github.com/pschonffeldt">
+                        <a class="contact__link" href="https://github.com/pschonffeldt" target="_blank" rel="noopener noreferrer">
                             <img class = "contact__card-icon-tech" src="./images/github.svg" alt="github-logo">
                         </a>
                     </div>
                     <div class="contact__card-stack-container-icon">
-                        <a href="mailto:cineschonffeldt@gmail.com?subject=Hello%20Pablo&body=I%20loved%20your%20portfolio!">
+                        <a class="contact__link" href="mailto:cineschonffeldt@gmail.com?subject=Hello%20Pablo&body=I%20loved%20your%20portfolio!" target="_blank" rel="noopener noreferrer">
                             <img class = "contact__card-icon-tech" src="./images/envelope.svg" alt="send-email">
                         </a>
                     </div>
                 </div>
 
-                <p class = "contact__card-footer_copyright">© 2025 Pablo Schonffeldt. Built with clean code and purpose.</p>
+                <!-- <p class = "contact__card-footer_copyright">© 2025 Pablo Schonffeldt. Built with clean code and purpose.</p> -->
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer">
+            <p class = "footer__copyright">© 2025 Pablo Schonffeldt. Built with clean code and purpose.</p>
+        </div>
+    </footer>
 </body>
 </html>
