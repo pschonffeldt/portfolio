@@ -515,8 +515,12 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    /* width: 70%; */
+    /* margin: 0 auto; */
+    width: 100%;
+    max-width: 1080px;
     margin: 0 auto;
+
     padding-top: 150px;
     background-color: var(--light-footer-background);
     border-radius: 100px 100px 0 0;
@@ -580,7 +584,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    /* width: 70%;
+    margin: 0 auto; */
+    width: 100%;
+    max-width: 1080px;
     margin: 0 auto;
     margin-top: 0;
     margin-bottom: 0;
