@@ -457,8 +457,7 @@ main {
     max-width: 1080px;
     margin: 0 auto;
     gap: 100px;
-    padding-top: 80px;
-    padding-bottom: 100px;
+    padding-top: 40px;
 }
 
 .projects__card {
@@ -467,6 +466,8 @@ main {
     align-items: flex-start;
     background: var(--light-card);
     width: 396px;
+    min-height: 420px;
+
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -483,8 +484,10 @@ main {
 
 .projects__image {
     width: 100%;
+    max-height: 200px;
     height: auto;
     object-fit: cover;
+    padding-bottom: 10px;
 }
 
 .projects__name {
@@ -620,6 +623,10 @@ main {
       }
       .contact__card-title {
         text-align: center;
+    }
+
+    .stack {
+        padding-bottom: 30px;
     }
 }
 
@@ -890,6 +897,7 @@ main {
         .projects__cards {
             flex-direction: column;
             gap: 50px;
+            padding-bottom: 0;
         }
         
         .contact {
