@@ -529,17 +529,19 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     max-width: 1080px;
     margin: 0 auto;
-
     padding-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: var(--light-footer-background);
     border-radius: 100px 100px 0 0;
 }
 
 .contact__card-title {
     color: var(--light-footer-font);
+    text-align: center;
 }
 
 .contact__card-subtitle {
@@ -587,8 +589,13 @@ main {
 }
 
 .contact__card-icon-tech {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
+}
+
+.contact__link {
+    width: 45px;
+    height: 45px;
 }
 
 .footer {
@@ -596,7 +603,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     max-width: 1080px;
     margin: 0 auto;
     margin-top: 0;
