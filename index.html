@@ -1,305 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Pablo Schonffeldt, frontend developer with a background in marketing, strategy, and automation.">
-    <meta name="author" content="Pablo Schonffeldt">
-    <meta property="og:title" content="Pablo Schonffeldt | Portfolio">
-    <meta property="og:image" content="./images/profile-pic.webp">
-    <meta name="theme-color" content="#f8f8f8">
-    <link rel="icon" type="image/png" href="./images/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
-    <link rel="shortcut icon" href="./images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    <link rel="manifest" href="./images/site.webmanifest">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Pablo Schonffeldt, frontend developer with a background in marketing, strategy, and automation."
+    />
+    <meta name="author" content="Pablo Schonffeldt" />
+    <meta property="og:title" content="Pablo Schonffeldt | Portfolio" />
+    <meta property="og:image" content="./images/profile-pic.webp" />
+    <meta name="theme-color" content="#f8f8f8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./images/site.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Pablo's portfolio</title>
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Pablo Schonffeldt",
-          "url": "https://pschonffeldt.dev",
-          "image": "https://pschonffeldt.dev/images/profile-pic.webp",
-          "sameAs": [
-            "https://github.com/pschonffeldt",
-            "https://www.linkedin.com/in/pablo-schonffeldt-guilisasti/"
-          ],
-          "jobTitle": "Frontend Developer"
-        }
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pablo Schonffeldt",
+        "url": "https://pschonffeldt.dev",
+        "image": "https://pschonffeldt.dev/images/profile-pic.webp",
+        "sameAs": [
+          "https://github.com/pschonffeldt",
+          "https://www.linkedin.com/in/pablo-schonffeldt-guilisasti/"
+        ],
+        "jobTitle": "Frontend Developer"
+      }
     </script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MXS6V7EVN2"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MXS6V7EVN2"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-MXS6V7EVN2');
-    </script>            
-</head>
+      gtag("config", "G-MXS6V7EVN2");
+    </script>
+  </head>
 
-<body>
+  <body>
     <!-- NAVIGATION BAR -->
     <nav>
-        <ul class = "nav__list">
-            <li><a class = "nav__link" href="#hero">Welcome</a></li>
-            <li><a class = "nav__link" href="#about">About</a></li>
-            <li><a class = "nav__link" href="#career">Career</a></li>
-            <li><a class = "nav__link" href="#stack">Stack</a></li>
-            <li><a class = "nav__link" href="#certifications">Certifications</a></li>
-            <li><a class = "nav__link" href="#projects">Projects</a></li>
-            <li><a class = "nav__link" href="#contact">Contact</a></li>
-        </ul>
+      <ul class="nav__list">
+        <li><a class="nav__link" href="#hero">Welcome</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#career">Career</a></li>
+        <li><a class="nav__link" href="#stack">Stack</a></li>
+        <li><a class="nav__link" href="#certifications">Certifications</a></li>
+        <li><a class="nav__link" href="#projects">Projects</a></li>
+        <li><a class="nav__link" href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
     <!-- MAIN -->
     <main>
- 
-        <!-- HERO SECTION -->
-        <section class = "hero" id = "hero">
-            <div class="u-container">
-                <div class="hero__text">
-                    <h3 class="hero__text-greeting text-light">Hi, I’m</h3>
-                    <h1 class="hero__text-name">Pablo Schonffeldt</h1>
-                    <p class="hero__text-description text-lg text-light">Former marketing strategist turned frontend developer — building clean, responsive, and meaningful digital experiences.</p>
-                    <a href="#about" class="hero__text-button">More about me</a>
-                </div>
-                <div class="hero__image">
-                    <img class="hero__image-file" src="./images/profile-pic.webp" alt="pablo-profile-picture">
-                </div>
-            </div>
-        </section>
+      <!-- HERO SECTION -->
+      <section class="hero" id="hero">
+        <div class="u-container">
+          <div class="hero__text">
+            <h3 class="hero__text-greeting text-light">Hi, I’m</h3>
+            <h1 class="hero__text-name">Pablo Schonffeldt</h1>
+            <p class="hero__text-description text-lg text-light">
+              Former marketing strategist turned frontend developer — building
+              clean, responsive, and meaningful digital experiences.
+            </p>
+            <a href="#about" class="hero__text-button">More about me</a>
+          </div>
+          <div class="hero__image">
+            <img
+              class="hero__image-file"
+              src="./images/profile-pic.webp"
+              alt="pablo-profile-picture"
+            />
+          </div>
+        </div>
+      </section>
 
-        <!-- ABOUT  SECTION -->
-        <section class = "about" id = "about">
-            <div class="u-container">
-                <div class="about__content">
-                    <h2 class="about__title">About me</h2>
-                    <p class="about__description text-md text-light">I’m a web developer with a multidisciplinary background and a growing focus on custom web solutions.</p>
-                    <p class="about__description text-md text-light">After years working in product marketing, automation, and digital strategy across Europe, Asia, and Latin America, I’ve transitioned fully into software development — driven by a passion for building things from the ground up.</p>
-                    <p class="about__description text-md text-light">With 3 years in film post production spanning 25+ features, I went on to manage marketing for global companies across Vietnam and Chile, founded a marketing and software company, co-founded a US startup, and led automation strategies driving client growth.</p>
-                    <p class="about__description text-md text-light">Today, I bring that same creative and analytical mindset to web development — combining thoughtful design, clean code, and user-first thinking.</p>     
-                </div>
-                <div class="about__image">
-                    <img class="about__image-file" src="./images/working-pic.webp" alt="pablo-working-picture">
-                    <p class="about__image-text">Yes, I use my birks with socks</p>
-                </div>
-            </div>
-        </section>
+      <!-- ABOUT  SECTION -->
+      <section class="about" id="about">
+        <div class="u-container">
+          <div class="about__content">
+            <h2 class="about__title">About me</h2>
+            <p class="about__description text-md text-light">
+              I’m a web developer with a multidisciplinary background and a
+              growing focus on custom web solutions.
+            </p>
+            <p class="about__description text-md text-light">
+              After years working in product marketing, automation, and digital
+              strategy across Europe, Asia, and Latin America, I’ve transitioned
+              fully into software development — driven by a passion for building
+              things from the ground up.
+            </p>
+            <p class="about__description text-md text-light">
+              With 3 years in film post production spanning 25+ features, I went
+              on to manage marketing for global companies across Vietnam and
+              Chile, founded a marketing and software company, co-founded a US
+              startup, and led automation strategies driving client growth.
+            </p>
+            <p class="about__description text-md text-light">
+              Today, I bring that same creative and analytical mindset to web
+              development — combining thoughtful design, clean code, and
+              user-first thinking.
+            </p>
+          </div>
+          <div class="about__image">
+            <img
+              class="about__image-file"
+              src="./images/working-pic.webp"
+              alt="pablo-working-picture"
+            />
+            <p class="about__image-text">Yes, I use my birks with socks</p>
+          </div>
+        </div>
+      </section>
 
-        <!-- CAREER SECTION -->
-        <section class = "career" id = "career">
-            <div class="u-container">
-                <div class="career__content">
-                    <h2 class="career__content-title">From strategy to software</h2>
-                    <p class="career__content-description text-md text-light">Before fully dedicating myself to development, I spent years at the intersection of marketing, data, and product.<br>As a strategist and automation specialist, I collaborated with teams across Latin America, Europe, and Southeast Asia — always seeking ways to improve performance through systems and design.</p>
-                    <p class="career__content-description text-md text-light">What started as a passion for problem-solving and curiosity for how things worked under the hood evolved into a full transition to frontend development. Today, I build websites and interfaces with the same mindset that shaped my past: data-driven decisions, clarity in communication, and a commitment to impact.</p>
-                    <img class = "career__content-timeline" src="./images/timeline.png" alt="pablo-work-timeline">
-                </div>
-            </div>
-        </section>
+      <!-- CAREER SECTION -->
+      <section class="career" id="career">
+        <div class="u-container">
+          <div class="career__content">
+            <h2 class="career__content-title">From strategy to software</h2>
+            <p class="career__content-description text-md text-light">
+              Before fully dedicating myself to development, I spent years at
+              the intersection of marketing, data, and product.<br />As a
+              strategist and automation specialist, I collaborated with teams
+              across Latin America, Europe, and Southeast Asia — always seeking
+              ways to improve performance through systems and design.
+            </p>
+            <p class="career__content-description text-md text-light">
+              What started as a passion for problem-solving and curiosity for
+              how things worked under the hood evolved into a full transition to
+              frontend development. Today, I build websites and interfaces with
+              the same mindset that shaped my past: data-driven decisions,
+              clarity in communication, and a commitment to impact.
+            </p>
+            <img
+              class="career__content-timeline"
+              src="./images/timeline.png"
+              alt="pablo-work-timeline"
+            />
+          </div>
+        </div>
+      </section>
 
-        <!-- STACK SECTION -->
-        <section class = "stack" id = "stack">
-            <div class="u-container">
-                <div class="stack__text">
-                    <h2 class="stack__text-title">Stack</h2>
-                    <p class="stack__text-description text-lg text-light">I’ve built my frontend stack around clarity, performance, and scalability — applying principles I once used in product design and campaign systems to user interfaces and interactions.</p>
-                </div>
-                <div class="stack__card">
-                    <div class="stack__card-row-a">
-                        <div class="stack__card-icon">
-                            <img class = "stack__card-icon-tech" src="./images/html.svg" alt="html-logo">
-                        </div>
-                        <div class="stack__card-icon">
-                            <img class = "stack__card-icon-tech" src="./images/javascript.svg" alt="html-logo">
-                        </div>
-                        <div class="stack__card-icon">
-                            <img class = "stack__card-icon-tech" src="./images/css.svg" alt="html-logo">
-                        </div>
-                        <div class="stack__card-icon">
-                            <img class = "stack__card-icon-tech" src="./images/react.svg" alt="html-logo">
-                        </div>
-                    </div>
-                    
-                    <div class="stack__card-row-b">
-                        <div class="stack__card-icon">
-                            <img class = "stack__card-icon-tech" src="./images/git.svg" alt="html-logo">
-                        </div>
-                        <div class="stack__card-icon">
-                            <img class = "stack__card-icon-tech" src="./images/github.svg" alt="html-logo">
-                        </div>
-                        <div class="stack__card-icon">
-                            <img class = "stack__card-icon-tech" src="./images/gitkraken.svg" alt="html-logo">
-                        </div>
-                        <div class="stack__card-icon">
-                            <img class = "stack__card-icon-tech" src="./images/vs-code.svg" alt="html-logo">
-                        </div>
-                    </div>
-                </div>
+      <!-- STACK SECTION -->
+      <section class="stack" id="stack">
+        <div class="u-container">
+          <div class="stack__text">
+            <h2 class="stack__text-title">Stack</h2>
+            <p class="stack__text-description text-lg text-light">
+              I’ve built my frontend stack around clarity, performance, and
+              scalability — applying principles I once used in product design
+              and campaign systems to user interfaces and interactions.
+            </p>
+          </div>
+          <div class="stack__card">
+            <div class="stack__card-row-a">
+              <div class="stack__card-icon">
+                <img
+                  class="stack__card-icon-tech"
+                  src="./images/html.svg"
+                  alt="html-logo"
+                />
+              </div>
+              <div class="stack__card-icon">
+                <img
+                  class="stack__card-icon-tech"
+                  src="./images/javascript.svg"
+                  alt="html-logo"
+                />
+              </div>
+              <div class="stack__card-icon">
+                <img
+                  class="stack__card-icon-tech"
+                  src="./images/css.svg"
+                  alt="html-logo"
+                />
+              </div>
+              <div class="stack__card-icon">
+                <img
+                  class="stack__card-icon-tech"
+                  src="./images/react.svg"
+                  alt="html-logo"
+                />
+              </div>
             </div>
-        </section>
 
-        <!-- CERTIFICATIONS SECTION -->
-        <section class = "certifications" id = "certifications">
-            <div class="u-container">
-                <div class="certifications__wrapper">
-                    <h2 class="certifications__wrapper-title">Certifications</h2>
-                    <div class="certifications__wrapper-card">
-                        <a href="https://www.freecodecamp.org/certification/pschonffeldt/responsive-web-design" target="_blank" rel="noopener noreferrer"><img class = "certifications__wrapper-diploma" src="./images/cert-a.webp" alt="Responsive Web Design Certification"></a>
-                        <a href="https://www.freecodecamp.org/certification/pschonffeldt/javascript-algorithms-and-data-structures-v8" target="_blank" rel="noopener noreferrer"><img class = "certifications__wrapper-diploma" src="./images/cert-b.webp" alt="JavaScript Algorithms and Data Structures Certification"></a>
-                    </div>
-                </div>
-            </div>            
-        </section>
-
-         <!-- PROJECTS SECTION -->
-         <section class="projects" id="projects">
-            <div class="u-container">
-                <div class="projects__container">
-                <h2 class="projects__title">Projects</h2>
-                    <div class="projects__cards">
-                        <!-- Card 1 -->
-                        <article class="projects__card">
-                            <div class="projects__media">
-                                <img src="./images/portfolio.png" alt="Professional portfolio screenshot" class="projects__image">
-                            </div>
-                            <h3 class="projects__name">Professional portfolio</h3>
-                            <p class="projects__release">First release: Apr 28, 2025</p>
-                            <p class="projects__description text-sm">I’ve built my professional portfolio in pursuit of becoming a better developer and applying for jobs.</p>
-                            <a href="https://pschonffeldt.dev/" target="_blank" rel="noopener noreferrer" class="projects__link">
-                                <img src="./images/link.svg" alt="Visit project" class="projects__icon u-shake">
-                            </a>
-                        </article>
-                        <!-- Card 2 -->
-                        <article class="projects__card">
-                            <div class="projects__media">
-                                <img src="./images/pokedex.png" alt="Pokedex app screenshot" class="projects__image">
-                            </div>
-                            <h3 class="projects__name">Pokedex app</h3>
-                            <p class="projects__release">First release: Apr 28, 2025</p>
-                            <p class="projects__description text-sm">I developed a Pokedex application that interacts with an API to display information about different Pokémon.</p>
-                            <a href="https://pokedex-chi-jade.vercel.app/" target="_blank" rel="noopener noreferrer" class="projects__link">
-                                <img src="./images/link.svg" alt="Visit project" class="projects__icon u-shake">
-                            </a>
-                        </article>
-                    </div>
-                    <div class="projects__cards">
-                        <!-- Card 3 -->
-                        <article class="projects__card">
-                            <div class="projects__media">
-                                <img src="./images/palabras.png" alt="PostMeter screenshot" class="projects__image">
-                            </div>
-                            <h3 class="projects__name">PostMeter</h3>
-                            <p class="projects__release">First release: May 13, 2025</p>
-                            <p class="projects__description text-sm">I've built PostMeter, a real-time character counter tool that helps marketers optimize their social media content across platforms.</p>
-                            <a href="https://palabras-delta.vercel.app/" target="_blank" rel="noopener noreferrer" class="projects__link">
-                                <img src="./images/link.svg" alt="Visit project" class="projects__icon u-shake">
-                            </a>
-                        </article>
-                        <!-- Card 4 -->
-                        <article class="projects__card">
-                            <div class="projects__media">
-                                <img src="./images/convert.png" alt="PostMeter screenshot" class="projects__image">
-                            </div>
-                            <h3 class="projects__name">RomanizeIt</h3>
-                            <p class="projects__release">First release: May 15, 2025</p>
-                            <p class="projects__description text-sm">I developed RomanizeIt, a sleek online converter that transforms decimal numbers into Roman numerals.</p>
-                            <a href="https://converter-five-woad.vercel.app/" target="_blank" rel="noopener noreferrer" class="projects__link">
-                                <img src="./images/link.svg" alt="Visit project" class="projects__icon u-shake">
-                            </a>
-                        </article>
-                    </div>
-                    <div class="projects__cards">
-                        <!-- Card 5 -->
-                        <article class="projects__card">
-                            <div class="projects__media">
-                                <img src="./images/lima.png" alt="PostMeter screenshot" class="projects__image">
-                            </div>
-                            <h3 class="projects__name">Intro a Lima</h3>
-                            <p class="projects__release">First release: May 29, 2025</p>
-                            <p class="projects__description text-sm">I've built Intro a Lima, a city guide that showcases the best spots and local insights in Lima, Peru.</p>
-                            <a href="https://lima-sepia.vercel.app/" target="_blank" rel="noopener noreferrer" class="projects__link">
-                                <img src="./images/link.svg" alt="Visit project" class="projects__icon u-shake">
-                            </a>
-                        </article>
-                        <!-- Card 6 -->
-                        <article class="projects__card">
-                            <div class="projects__media">
-                                <img src="./images/viaje.png" alt="PostMeter screenshot" class="projects__image">
-                            </div>
-                            <h3 class="projects__name">Pre-viaje</h3>
-                            <p class="projects__release">First release: Jun 12, 2025</p>
-                            <p class="projects__description text-sm">I've built Pre-Viaje, a practical checklist app that helps travelers organize and pack efficiently for their upcoming trips.</p>
-                            <a href="https://list-sepia.vercel.app/" target="_blank" rel="noopener noreferrer" class="projects__link">
-                                <img src="./images/link.svg" alt="Visit project" class="projects__icon u-shake">
-                            </a>
-                        </article>
-                    </div>
-                    <div class="projects__cards">
-                        <!-- Card 7 -->
-                         <article class="projects__card">
-                            <div class="projects__media">
-                                <img src="./images/museo.png" alt="Pokedex app screenshot" class="projects__image">
-                            </div>
-                            <h3 class="projects__name">Museos</h3>
-                            <p class="projects__release">First release: Jul, 2025</p>
-                            <p class="projects__description text-sm">I built Museos, a directory where you can search museums and check what matters before stepping inside.</p>
-                            <a href="https://museos-pied.vercel.app/" target="_blank" rel="noopener noreferrer" class="projects__link">
-                                <img src="./images/link.svg" alt="Visit project" class="projects__icon u-shake">
-                            </a>
-                        </article>
-                        <!-- Card 8 -->
-                        <article class="projects__card">
-                            <div class="projects__media">
-                                <img src="./images/wip.png" alt="Pokedex app screenshot" class="projects__image">
-                            </div>
-                            <h3 class="projects__name">Solución Legal</h3>
-                            <p class="projects__release">Expected release: Aug, 2025</p>
-                            <p class="projects__description text-sm">I'm developing SoluciónLegal, a legal practice management platform that streamlines case handling.</p>
-                            <!-- <a href="https://pokedex-chi-jade.vercel.app/" target="_blank" rel="noopener noreferrer" class="projects__link">
-                                <img src="./images/link.svg" alt="Visit project" class="projects__icon u-shake"> -->
-                            </a>
-                        </article>
-                    </div>
-                </div>
+            <div class="stack__card-row-b">
+              <div class="stack__card-icon">
+                <img
+                  class="stack__card-icon-tech"
+                  src="./images/git.svg"
+                  alt="html-logo"
+                />
+              </div>
+              <div class="stack__card-icon">
+                <img
+                  class="stack__card-icon-tech"
+                  src="./images/github.svg"
+                  alt="html-logo"
+                />
+              </div>
+              <div class="stack__card-icon">
+                <img
+                  class="stack__card-icon-tech"
+                  src="./images/nextjs.svg"
+                  alt="html-logo"
+                />
+              </div>
+              <div class="stack__card-icon">
+                <img
+                  class="stack__card-icon-tech"
+                  src="./images/vs-code.svg"
+                  alt="html-logo"
+                />
+              </div>
             </div>
-          </section>
-          
-        <!-- CONTACT SECTION -->
-        <section class = "contact" id = "contact">
-            <div class="contact__card">
-                <h2 class ="contact__card-title">Let’s Build Something Together</h2>
-                <h3 class = "contact__card-subtitle">I’m always open to new opportunities</h3>
-                <p class = "contact__card-content">Whether it’s collaborating on a project, solving a problem, or exploring something meaningful in tech. If you’re looking for a developer who brings both technical skill and strategic insight to the table, let’s talk.</p>
-                <h3 class = "contact__card-cta">Connect with me</h3>
-                <div class="contact__card-stack-container">
-                    <div class="contact__card-stack-container-icon u-shake">
-                        <a class="contact__link" href="https://www.linkedin.com/in/pablo-schonffeldt-guilisasti/" target="_blank" rel="noopener noreferrer">
-                            <img class = "contact__card-icon-tech" src="./images/linkedin.svg" alt="linkedin-logo">
-                        </a>
-                    </div>
-                    <div class="contact__card-stack-container-icon u-shake">
-                        <a class="contact__link" href="https://github.com/pschonffeldt" target="_blank" rel="noopener noreferrer">
-                            <img class = "contact__card-icon-tech" src="./images/github.svg" alt="github-logo">
-                        </a>
-                    </div>
-                    <div class="contact__card-stack-container-icon u-shake">
-                        <a class="contact__link" href="mailto:cineschonffeldt@gmail.com?subject=Hello%20Pablo&body=I%20loved%20your%20portfolio!" target="_blank" rel="noopener noreferrer">
-                            <img class = "contact__card-icon-tech" src="./images/envelope.svg" alt="send-email">
-                        </a>
-                    </div>
-                </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- CERTIFICATIONS SECTION -->
+      <section class="certifications" id="certifications">
+        <div class="u-container">
+          <div class="certifications__wrapper">
+            <h2 class="certifications__wrapper-title">Certifications</h2>
+            <div class="certifications__wrapper-card">
+              <a
+                href="https://www.freecodecamp.org/certification/pschonffeldt/responsive-web-design"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="certifications__wrapper-diploma"
+                  src="./images/cert-a.webp"
+                  alt="Responsive Web Design Certification"
+              /></a>
+              <a
+                href="https://www.freecodecamp.org/certification/pschonffeldt/javascript-algorithms-and-data-structures-v8"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="certifications__wrapper-diploma"
+                  src="./images/cert-b.webp"
+                  alt="JavaScript Algorithms and Data Structures Certification"
+              /></a>
+              <a
+                href="https://www.freecodecamp.org/certification/pschonffeldt/front-end-development-libraries"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  class="certifications__wrapper-diploma"
+                  src="./images/cert-c.webp"
+                  alt="JavaScript Algorithms and Data Structures Certification"
+              /></a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section class="projects" id="projects">
+        <div class="u-container">
+          <div class="projects__container">
+            <h2 class="projects__title">Projects</h2>
+            <div class="projects__cards">
+              <!-- Card 1 -->
+              <article class="projects__card">
+                <div class="projects__media">
+                  <img
+                    src="./images/portfolio.png"
+                    alt="Professional portfolio screenshot"
+                    class="projects__image"
+                  />
+                </div>
+                <h3 class="projects__name">Professional portfolio</h3>
+                <p class="projects__release">First release: Apr 28, 2025</p>
+                <p class="projects__description text-sm">
+                  I’ve built my professional portfolio in pursuit of becoming a
+                  better developer and applying for jobs.
+                </p>
+                <a
+                  href="https://pschonffeldt.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="projects__link"
+                >
+                  <img
+                    src="./images/link.svg"
+                    alt="Visit project"
+                    class="projects__icon u-shake"
+                  />
+                </a>
+              </article>
+              <!-- Card 2 -->
+              <article class="projects__card">
+                <div class="projects__media">
+                  <img
+                    src="./images/pokedex.png"
+                    alt="Pokedex app screenshot"
+                    class="projects__image"
+                  />
+                </div>
+                <h3 class="projects__name">Pokedex app</h3>
+                <p class="projects__release">First release: Apr 28, 2025</p>
+                <p class="projects__description text-sm">
+                  I developed a Pokedex application that interacts with an API
+                  to display information about different Pokémon.
+                </p>
+                <a
+                  href="https://pokedex-chi-jade.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="projects__link"
+                >
+                  <img
+                    src="./images/link.svg"
+                    alt="Visit project"
+                    class="projects__icon u-shake"
+                  />
+                </a>
+              </article>
+            </div>
+            <div class="projects__cards">
+              <!-- Card 3 -->
+              <article class="projects__card">
+                <div class="projects__media">
+                  <img
+                    src="./images/palabras.png"
+                    alt="PostMeter screenshot"
+                    class="projects__image"
+                  />
+                </div>
+                <h3 class="projects__name">PostMeter</h3>
+                <p class="projects__release">First release: May 13, 2025</p>
+                <p class="projects__description text-sm">
+                  I've built PostMeter, a real-time character counter tool that
+                  helps marketers optimize their social media content across
+                  platforms.
+                </p>
+                <a
+                  href="https://palabras-delta.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="projects__link"
+                >
+                  <img
+                    src="./images/link.svg"
+                    alt="Visit project"
+                    class="projects__icon u-shake"
+                  />
+                </a>
+              </article>
+              <!-- Card 4 -->
+              <article class="projects__card">
+                <div class="projects__media">
+                  <img
+                    src="./images/convert.png"
+                    alt="PostMeter screenshot"
+                    class="projects__image"
+                  />
+                </div>
+                <h3 class="projects__name">RomanizeIt</h3>
+                <p class="projects__release">First release: May 15, 2025</p>
+                <p class="projects__description text-sm">
+                  I developed RomanizeIt, a sleek online converter that
+                  transforms decimal numbers into Roman numerals.
+                </p>
+                <a
+                  href="https://converter-five-woad.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="projects__link"
+                >
+                  <img
+                    src="./images/link.svg"
+                    alt="Visit project"
+                    class="projects__icon u-shake"
+                  />
+                </a>
+              </article>
+            </div>
+            <div class="projects__cards">
+              <!-- Card 5 -->
+              <article class="projects__card">
+                <div class="projects__media">
+                  <img
+                    src="./images/lima.png"
+                    alt="PostMeter screenshot"
+                    class="projects__image"
+                  />
+                </div>
+                <h3 class="projects__name">Intro a Lima</h3>
+                <p class="projects__release">First release: May 29, 2025</p>
+                <p class="projects__description text-sm">
+                  I've built Intro a Lima, a city guide that showcases the best
+                  spots and local insights in Lima, Peru.
+                </p>
+                <a
+                  href="https://lima-sepia.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="projects__link"
+                >
+                  <img
+                    src="./images/link.svg"
+                    alt="Visit project"
+                    class="projects__icon u-shake"
+                  />
+                </a>
+              </article>
+              <!-- Card 6 -->
+              <article class="projects__card">
+                <div class="projects__media">
+                  <img
+                    src="./images/viaje.png"
+                    alt="PostMeter screenshot"
+                    class="projects__image"
+                  />
+                </div>
+                <h3 class="projects__name">Pre-viaje</h3>
+                <p class="projects__release">First release: Jun 12, 2025</p>
+                <p class="projects__description text-sm">
+                  I've built Pre-Viaje, a practical checklist app that helps
+                  travelers organize and pack efficiently for their upcoming
+                  trips.
+                </p>
+                <a
+                  href="https://list-sepia.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="projects__link"
+                >
+                  <img
+                    src="./images/link.svg"
+                    alt="Visit project"
+                    class="projects__icon u-shake"
+                  />
+                </a>
+              </article>
+            </div>
+            <div class="projects__cards">
+              <!-- Card 7 -->
+              <article class="projects__card">
+                <div class="projects__media">
+                  <img
+                    src="./images/museo.png"
+                    alt="Pokedex app screenshot"
+                    class="projects__image"
+                  />
+                </div>
+                <h3 class="projects__name">Museos</h3>
+                <p class="projects__release">First release: Jul, 2025</p>
+                <p class="projects__description text-sm">
+                  I built Museos, a directory where you can search museums and
+                  check what matters before stepping inside.
+                </p>
+                <a
+                  href="https://museos-pied.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="projects__link"
+                >
+                  <img
+                    src="./images/link.svg"
+                    alt="Visit project"
+                    class="projects__icon u-shake"
+                  />
+                </a>
+              </article>
+              <!-- Card 8 -->
+              <article class="projects__card">
+                <div class="projects__media">
+                  <img
+                    src="./images/pokeworld.png"
+                    alt="Pokemon learning hub"
+                    class="projects__image"
+                  />
+                </div>
+                <h3 class="projects__name">PokéWorld Explorer</h3>
+                <p class="projects__release">First release: Sep, 2025</p>
+                <p class="projects__description text-sm">
+                  I built an upgraded version of my OG Pokédex and turned it
+                  into a learning hub.
+                </p>
+                <a
+                  href="https://pokedex-2-five.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="projects__link"
+                >
+                  <img
+                    src="./images/link.svg"
+                    alt="Visit project"
+                    class="projects__icon u-shake"
+                  />
+                </a>
+              </article>
+            </div>
+            <div class="projects__cards">
+              <!-- Card 9 -->
+              <article class="projects__card">
+                <div class="projects__media">
+                  <img
+                    src="./images/wip.png"
+                    alt="Pokedex app screenshot"
+                    class="projects__image"
+                  />
+                </div>
+                <h3 class="projects__name">Lima para Chilenos</h3>
+                <p class="projects__release">
+                  Expected release: Late Oct, 2025
+                </p>
+                <p class="projects__description text-sm">
+                  I upgraded the OG version into a page packed with information
+                  for Chileans visiting Lima.
+                </p>
+                <!-- <a
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="projects__link"
+                >
+                  <img
+                    src="./images/link.svg"
+                    alt="Visit project"
+                    class="projects__icon u-shake"
+                  />
+                </a> -->
+              </article>
+              <!-- Card 8 -->
+              <!-- <article class="projects__card">
+                <div class="projects__media">
+                  <img
+                    src="./images/pokeworld.png"
+                    alt="Pokemon learning hub"
+                    class="projects__image"
+                  />
+                </div>
+                <h3 class="projects__name">PokéWorld Explorer</h3>
+                <p class="projects__release">First release: Sep, 2025</p>
+                <p class="projects__description text-sm">
+                  I built an upgraded version of my OG Pokédex and turned it
+                  into a learning hub.
+                </p>
+                <a
+                  href="https://pokedex-2-five.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="projects__link"
+                >
+                  <img
+                    src="./images/link.svg"
+                    alt="Visit project"
+                    class="projects__icon u-shake"
+                  />
+                </a>
+              </article> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="contact" id="contact">
+        <div class="contact__card">
+          <h2 class="contact__card-title">Let’s Build Something Together</h2>
+          <h3 class="contact__card-subtitle">
+            I’m always open to new opportunities
+          </h3>
+          <p class="contact__card-content">
+            Whether it’s collaborating on a project, solving a problem, or
+            exploring something meaningful in tech. If you’re looking for a
+            developer who brings both technical skill and strategic insight to
+            the table, let’s talk.
+          </p>
+          <h3 class="contact__card-cta">Connect with me</h3>
+          <div class="contact__card-stack-container">
+            <div class="contact__card-stack-container-icon u-shake">
+              <a
+                class="contact__link"
+                href="https://www.linkedin.com/in/pablo-schonffeldt-guilisasti/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="contact__card-icon-tech"
+                  src="./images/linkedin.svg"
+                  alt="linkedin-logo"
+                />
+              </a>
+            </div>
+            <div class="contact__card-stack-container-icon u-shake">
+              <a
+                class="contact__link"
+                href="https://github.com/pschonffeldt"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="contact__card-icon-tech"
+                  src="./images/github.svg"
+                  alt="github-logo"
+                />
+              </a>
+            </div>
+            <div class="contact__card-stack-container-icon u-shake">
+              <a
+                class="contact__link"
+                href="mailto:cineschonffeldt@gmail.com?subject=Hello%20Pablo&body=I%20loved%20your%20portfolio!"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="contact__card-icon-tech"
+                  src="./images/envelope.svg"
+                  alt="send-email"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div class="footer">
-            <p class = "footer__copyright">© 2025 Pablo Schonffeldt. Built with clean code and purpose.</p>
-        </div>
+      <div class="footer">
+        <p class="footer__copyright">
+          © 2025 Pablo Schonffeldt. Built with clean code and purpose.
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

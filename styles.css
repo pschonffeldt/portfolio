@@ -495,8 +495,7 @@ main {
   align-items: flex-start;
   background: var(--light-card);
   width: 396px;
-  min-height: 420px;
-
+  min-height: 450px;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
