@@ -2,7 +2,6 @@
   --light-body-background: #f8f8f8;
   --light-footer-background: #222222;
   --light-card: #ffffff;
-  --light-card-alt: #fdfdfd;
   --light-font: #222222;
   --light-button: #171717;
   --light-button-text: #ffffff;
@@ -90,18 +89,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* remove overflow-x here */
-  /* overflow-x: hidden; */
   min-height: 100%;
   font-family: var(--font-main);
   background-color: var(--light-body-background);
-}
-
-main {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 p,
@@ -230,7 +220,7 @@ nav::after {
   font-size: 16px;
   font-weight: lighter;
   text-decoration: none;
-  transition: transform 0.0001s ease-in;
+  transition: transform 0.1s ease-in;
   will-change: transform;
   color: var(--light-footer-font);
 }
@@ -266,6 +256,7 @@ main {
 }
 
 .hero__text-greeting {
+  font-size: 32px;
   animation: fadeUp 0.8s ease-out 0.2s both;
 }
 
@@ -479,13 +470,12 @@ main {
 }
 
 .projects__cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  gap: 100px;
+  gap: 40px;
   padding-top: 40px;
 }
 
@@ -494,7 +484,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   background: var(--light-card);
-  width: 396px;
+  width: 100%;
   min-height: 450px;
   padding: 20px;
   border-radius: 15px;
@@ -520,6 +510,13 @@ main {
 
 .projects__name {
   margin: 0 0 12px;
+  text-align: left;
+}
+
+.projects__card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  max-width: calc(50% - 20px);
+  margin: 0 auto;
 }
 
 .projects__release {
@@ -762,7 +759,7 @@ main {
   }
 
   .projects__cards {
-    gap: 50px;
+    gap: 30px;
   }
 
   .contact {
@@ -807,7 +804,9 @@ main {
   nav {
     flex-direction: column;
     flex-wrap: wrap;
+    height: auto;
     padding-top: 20px;
+    padding-bottom: 10px;
     width: 100%;
   }
 
@@ -923,8 +922,8 @@ main {
   }
 
   .projects__cards {
-    flex-direction: column;
-    gap: 50px;
+    grid-template-columns: 1fr;
+    gap: 30px;
     padding-bottom: 0;
   }
 
